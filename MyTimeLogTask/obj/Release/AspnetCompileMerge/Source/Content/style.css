@@ -1,0 +1,123 @@
+﻿
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #b0b0b0;
+    border-collapse: collapse;
+}
+
+table {
+    border: 1px solid #b0b0b0;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+
+.content {
+    width: 1200px;
+    margin: 50px auto;
+}
+input {
+    outline: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #929292;
+    padding-left: 10px;
+}
+
+button{
+    margin-top: 10px;
+    background-color:cadetblue;
+    border-radius:10px;
+    color:#fff;
+    padding:10px 20px;
+    outline:none;
+    border:none;
+}
+.right {
+    padding: 22px;
+    position: fixed;
+    top: 95px;
+    right: 36%;
+    background-color: #fff;
+    border: 1px solid #b0b0b0;
+}
+
+
+
+#page_navigation {
+    margin-left: 350px;
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+    #page_navigation .previous_link {
+        background: #c7c7c7;
+        border: 1px solid #7c0f0f;
+        border-radius: 2px;
+        color: #fff;
+        position: relative;
+        float: left;
+        padding: 12px 20px;
+        margin: 5px;
+        line-height: 1.42857143;
+        text-decoration: none;
+    }
+
+        #page_navigation .previous_link:hover {
+            z-index: 2;
+            color: #7c0f0f;
+            cursor: pointer;
+            background-color: rgba(7, 177, 7, 0.1);
+            border-color: #7c0f0f;
+        }
+
+    #page_navigation .next_link {
+        background: #c7c7c7;
+        border: 1px solid #35434e;
+        border-radius: 2px;
+        color: #fff;
+        position: relative;
+        float: left;
+        padding: 12px 20px;
+        margin: 5px;
+        line-height: 1.42857143;
+        text-decoration: none;
+    }
+
+        #page_navigation .next_link:hover {
+            z-index: 2;
+            color: #7c0f0f;
+            cursor: pointer;
+            background-color: rgba(7, 177, 7, 0.1);
+            border-color: #7c0f0f;
+        }
+
+    #page_navigation .page_link {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        color: #5a6f7c;
+        position: relative;
+        float: left;
+        padding: 12px 20px;
+        margin: 5px;
+        line-height: 1.42857143;
+        text-decoration: none;
+    }
+
+        #page_navigation .page_link:hover {
+            z-index: 2;
+            color: #7c0f0f;
+            cursor: pointer;
+            background-color: rgba(7, 177, 7, 0.1);
+            border-color: #7c0f0f;
+        }
+
+.page_link {
+    display: inline-block;
+    padding: 3px;
+}
+

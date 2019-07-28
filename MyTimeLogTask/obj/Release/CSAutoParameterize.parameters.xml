@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MyTimeLogEntities-Web.config Connection String" description="MyTimeLogEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Database.csdl|res://*/Models.Database.ssdl|res://*/Models.Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-KS8JE8D\SQLEXPRESS01;initial catalog=MyTimeLog;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Anar\\Desktop\\MyTimeLogTask\\MyTimeLogTask\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyTimeLogEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DB_A4BB48_avinarHostingEntities-Web.config Connection String" description="DB_A4BB48_avinarHostingEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Database.csdl|res://*/Models.Database.ssdl|res://*/Models.Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=sql6007.site4now.net;initial catalog=DB_A4BB48_avinarHosting;user id=DB_A4BB48_avinarHosting_admin;password=anar1991;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Anar\\Desktop\\MyTimeLogTask\\MyTimeLogTask\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_A4BB48_avinarHostingEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DB_A49893_taskEntities-Web.config Connection String" description="DB_A49893_taskEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Database.csdl|res://*/Models.Database.ssdl|res://*/Models.Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=sql6007.site4now.net;initial catalog=DB_A49893_task;persist security info=True;user id=DB_A49893_task_admin;password=anar1991;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Anar\\Desktop\\MyTimeLogTask\\MyTimeLogTask\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_A49893_taskEntities']/@connectionString" />
+  </parameter>
+</parameters>

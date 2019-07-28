@@ -1,0 +1,66 @@
+﻿@using MyTimeLogTask.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class="content">
+        @*show data from database*@
+        <div class="left" id="paginate">
+            @foreach (string item in ViewBag.TimeLogs)
+            {
+                // get Aze geolocation //
+                Session.LCID = 1068;
+                <div class="tableDiv ">
+                    <h2>@item</h2>
+                    <table>
+                        <tr>
+                            <th>Description</th>
+                            <th>Time Spent</th>
+                            <th>Date</th>
+                        </tr>
+                        @foreach (TimeLog element in ViewBag.TimeLog)
+                        {
+                            DateTime dt = Convert.ToDateTime(item);
+                            string date1 = dt.ToString().Substring(0, 11);
+                            string date2 = element.Date.ToString().Substring(0, 11);
+                            if (date1 == date2)
+                            {
+                                <tr>
+                                    <td>@element.Description</td>
+                                    <td>@element.TimeSpent</td>
+                                    <td>@element.Date</td>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+                 
+            }
+
+
+        </div>
+        @*page navigation*@
+        <div id='page_navigation'>
+
+        </div>
+
+        @*form adding*@
+        <div class="right">
+            <form id="AddTaskFrom">
+                <div class="form-inputs">
+                    <label>Description</label>
+                    <input type="text" name="Description" />
+                </div>
+                <br>
+                <div class="form-inputs">
+                    <label>Time Spent</label>
+                    <input type="text" name="TimeSpent" />
+                </div>
+                <br>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+
+    </div>

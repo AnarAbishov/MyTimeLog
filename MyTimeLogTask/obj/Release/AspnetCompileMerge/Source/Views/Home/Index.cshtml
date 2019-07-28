@@ -1,0 +1,68 @@
+﻿@using MyTimeLogTask.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="content">
+    <div class="left" id="paginate">
+        @*<h1>My Time Log</h1>*@
+
+
+        @foreach (string item in ViewBag.TimeLogs)
+        {
+
+            <div class="tableDiv ">
+                <h2>@item</h2>
+
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Time Spent</th>
+                        <th>Date</th>
+                    </tr>
+                    @foreach (TimeLog element in ViewBag.TimeLog)
+                    {
+                        DateTime dt = Convert.ToDateTime(item);
+                        string date1 = dt.ToString().Substring(0, 11);
+                        string date2 = element.Date.ToString().Substring(0, 11);
+                        if (date1 == date2)
+                        {
+                            <tr>
+                                <td>@element.Description</td>
+                                <td>@element.TimeSpent</td>
+                                <td>@element.Date</td>
+                            </tr>
+                        }
+                    }
+
+
+
+                </table>
+            </div>
+
+        }
+
+
+    </div>
+    <div id='page_navigation'>
+
+    </div>
+    <div class="right">
+        <form id="AddTaskFrom">
+            <div class="form-inputs">
+                <label>Description</label>
+                <input type="text" name="Description" />
+            </div>
+            <br>
+            <div class="form-inputs">
+                <label>Time Spent</label>
+                <input type="text" name="TimeSpent" />
+            </div>
+            <br>
+
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+
+</div>
